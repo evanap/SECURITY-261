@@ -22,6 +22,11 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 */
 
+import jenkins.model.Jenkins
+import hudson.model.AbstractProject
+import hudson.model.AbstractBuild
+import hudson.model.CauseAction
+
 // check plugin installed and version for GitHub-PR-builder
 
 def pluginGhprb = Jenkins.instance.pluginManager.activePlugins.find{ it.getShortName() == 'ghprb' }
